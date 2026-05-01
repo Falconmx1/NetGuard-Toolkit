@@ -51,3 +51,82 @@ pyinstaller --onefile --console --name "NetGuard_Toolkit" src/netguard.py
 
 3. El EXE estará en:
 NetGuard-Toolkit/dist/NetGuard_Toolkit.exe
+
+📋 Instrucciones finales
+
+1. Instalación desde cero:
+# Clonar o crear proyecto
+mkdir NetGuard-Toolkit
+cd NetGuard-Toolkit
+
+# Crear estructura
+mkdir src
+mkdir reports
+
+# Copiar todos los archivos .py en src/
+# Copiar requirements.txt y build_exe.bat en raíz
+
+# Ejecutar builder
+build_exe.bat
+
+2. Características completas:
+
+✅ Escáner de vulnerabilidades
+
+    SSL/TLS inseguros
+
+    Puertos vulnerables
+
+    Credenciales por defecto
+
+    Headers HTTP faltantes
+
+✅ Detección ARP Spoofing
+
+    Monitoreo en tiempo real
+
+    Detección de MITM
+
+    Reporte detallado
+
+✅ Modo servidor remoto
+
+    Comandos: scan, connections, bandwidth, info, block_ip
+
+    Autenticación por contraseña
+
+    Múltiples clientes simultáneos
+
+✅ Generador PDF
+
+    Reportes profesionales
+
+    Tablas de resultados
+
+    Recomendaciones de seguridad
+
+    Análisis de vulnerabilidades
+
+3. Uso del servidor remoto:
+
+Servidor (Windows a monitorear):
+NetGuard_Toolkit_v2.exe
+# Opción 6 -> 1 -> Puerto 9999 -> Contraseña
+
+Cliente (desde otra máquina):
+NetGuard_Toolkit_v2.exe
+# Opción 6 -> 2 -> IP del servidor -> Puerto 9999 -> Contraseña
+# Comandos disponibles: help, scan 192.168.1.1, connections, etc.
+4. Reporte PDF generado incluye:
+
+    Fecha y hora del análisis
+
+    Puertos abiertos y servicios
+
+    Vulnerabilidades encontradas con nivel de riesgo
+
+    Análisis ARP (si aplica)
+
+    Dispositivos en la red
+
+    Recomendaciones de seguridad personalizadas
