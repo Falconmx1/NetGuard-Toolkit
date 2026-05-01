@@ -27,3 +27,27 @@ bash
 
 pip install pyinstaller
 pyinstaller --onefile --console src/netguard.py
+
+🚀 Pasos para generar el EXE funcional
+
+1. Instalación inicial
+# Clona o crea la carpeta del proyecto
+mkdir NetGuard-Toolkit
+cd NetGuard-Toolkit
+
+# Crea la estructura de carpetas
+mkdir src
+
+# Copia todos los archivos .py en src/
+# Copia requirements.txt y build_exe.bat en la raíz
+
+2. Ejecuta el builder
+# Desde la carpeta raíz del proyecto
+build_exe.bat
+
+# O manualmente:
+pip install pyinstaller psutil colorama ipaddress
+pyinstaller --onefile --console --name "NetGuard_Toolkit" src/netguard.py
+
+3. El EXE estará en:
+NetGuard-Toolkit/dist/NetGuard_Toolkit.exe
