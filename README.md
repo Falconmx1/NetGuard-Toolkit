@@ -18,3 +18,12 @@ git clone https://github.com/Falconmx1/NetGuard-Toolkit.git
 cd NetGuard-Toolkit
 pip install -r requirements.txt
 python src/netguard.py
+
+🎯 Uso básico
+
+Ejecuta el script y sigue el menú interactivo. Requiere permisos de administrador para funciones avanzadas.
+📦 Compilar a .exe
+bash
+
+pip install pyinstaller
+pyinstaller --onefile --console src/netguard.py
